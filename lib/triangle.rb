@@ -10,7 +10,7 @@ class Triangle
 
   def kind
      sides = [@side1, @side2, @side3]
-     raise TriangleError (@side1 <= 0 || @side2 <= 0 || @side <= 0 ) or (sides.first+sides[1] <= sides.last || sides.first+sides.last <= sides[1] || sides[1]+sides.last <= sides.first) 
+     raise TriangleError if (@side1 <= 0 || @side2 <= 0 || @side <= 0 ) or (sides.first+sides[1] <= sides.last || sides.first+sides.last <= sides[1] || sides[1]+sides.last <= sides.first) 
      # checks to see if all sides are greater than 0 and to see if 3rd side is always larger than the other two sides combined
      return :equilateral if sides.first==sides[1] && sides[1] ==sides.last
      return :isosceles if sides[1] == sides.last || sides.first == sides.last || sides.first == sides[1]
