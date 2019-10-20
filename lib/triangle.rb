@@ -9,7 +9,10 @@ class Triangle
   end 
 
   def kind
-      sides
+     sides = [@side1, @side2, @side3]
+   end 
+     
+     
   
   # write code here
 end
