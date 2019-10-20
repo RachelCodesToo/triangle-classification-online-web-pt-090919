@@ -15,7 +15,7 @@ class Triangle
      return :scalene if sides.uniq.length == 3
   end 
      
-  class TriangError < StandardError
+  class TriangleError < StandardError
   end 
   
   
