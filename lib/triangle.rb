@@ -12,7 +12,7 @@ class Triangle
      sides = [@side1, @side2, @side3]
      return :equilateral if sides.first==sides[1] && sides[1] ==sides.last
      return :isosceles if sides[1] == sides.last || sides.first == sides.last || sides.first == sides[1]
-     return :scalene is sides.uniq.length == 3
+     return :scalene if sides.uniq.length == 3
   end 
      
 
