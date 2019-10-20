@@ -8,8 +8,8 @@ class Triangle
     @side3 = side3
   end 
 
-  # def kind
-  #     sides
+  def kind
+      sides
   
   # write code here
 end
