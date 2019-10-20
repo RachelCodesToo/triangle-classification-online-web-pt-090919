@@ -9,6 +9,7 @@ class Triangle
   end 
 
   def kind
+    sides
   
   # write code here
 end
